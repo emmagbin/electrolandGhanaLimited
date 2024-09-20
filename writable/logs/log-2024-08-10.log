@@ -1,0 +1,382 @@
+CRITICAL - 2024-08-10 10:09:07 --> ErrorException: Undefined property: stdClass::$loginId
+[Method: GET, Route: Roles]
+in APPPATH\Views\Roles.php on line 309.
+ 1 APPPATH\Views\Roles.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$loginId', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php', 309)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Roles', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 10:11:17 --> ErrorException: Undefined property: stdClass::$Role_management
+[Method: GET, Route: Roles]
+in APPPATH\Views\Roles.php on line 85.
+ 1 APPPATH\Views\Roles.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Role_management', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php', 85)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Roles', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 10:11:51 --> ErrorException: Undefined property: stdClass::$FullName
+[Method: GET, Route: Roles]
+in APPPATH\Views\Roles.php on line 318.
+ 1 APPPATH\Views\Roles.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$FullName', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php', 318)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Roles', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 12:07:33 --> ParseError: syntax error, unexpected variable "$notification"
+[Method: GET, Route: Roles]
+in APPPATH\Controllers\Home.php on line 148.
+ 1 VENDORPATH\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp8\\htdocs\\electroland\\vendor\\composer/../../app/Controllers/Home.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Home')
+ 3 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 4 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 12:08:03 --> ErrorException: Undefined variable $table_name
+[Method: POST, Route: delete_data]
+in APPPATH\Controllers\Home.php on line 147.
+ 1 APPPATH\Controllers\Home.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table_name', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->delete_data()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 12:08:37 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+[Method: POST, Route: delete_data]
+in APPPATH\Models\MasterModel.php on line 399.
+ 1 APPPATH\Controllers\Home.php(147): App\Models\MasterModel->delete_data('roles', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->delete_data()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 12:09:30 --> Error: Call to undefined method CodeIgniter\Session\Session::set_flashdata()
+[Method: POST, Route: delete_data]
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->delete_data()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-10 15:57:52 --> mysqli_sql_exception: Column 'sex' cannot be null in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', Array, Array)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-10 15:57:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'sex' cannot be null
+[Method: POST, Route: createUser]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (:useremail:, :phonenumber:, :roleid:, :sex:, :fname:, :lname:, :logintoken:, :accountstatus:, :createdon:, :createdby:)', [...], false)
+ 2 APPPATH\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 15:57:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'sex' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 15:57:52pm\', 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 15:57:52pm\', 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (:useremail:, :phonenumber:, :roleid:, :sex:, :fname:, :lname:, :logintoken:, :accountstatus:, :createdon:, :createdby:)', [...], false)
+ 4 APPPATH\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 15:57:52 --> [Caused by] mysqli_sql_exception: Column 'sex' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 15:57:52pm\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 15:57:52pm\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 15:57:52pm\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (:useremail:, :phonenumber:, :roleid:, :sex:, :fname:, :lname:, :logintoken:, :accountstatus:, :createdon:, :createdby:)', [...], false)
+ 5 APPPATH\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-10 16:03:49 --> mysqli_sql_exception: Column 'sex' cannot be null in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', Array, Array)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-10 16:03:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'sex' cannot be null
+[Method: POST, Route: CreateUser]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (:useremail:, :phonenumber:, :roleid:, :sex:, :fname:, :lname:, :logintoken:, :accountstatus:, :createdon:, :createdby:)', [...], false)
+ 2 APPPATH\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 16:03:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'sex' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 16:03:49pm\', 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 16:03:49pm\', 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (:useremail:, :phonenumber:, :roleid:, :sex:, :fname:, :lname:, :logintoken:, :accountstatus:, :createdon:, :createdby:)', [...], false)
+ 4 APPPATH\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 16:03:49 --> [Caused by] mysqli_sql_exception: Column 'sex' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 16:03:49pm\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 16:03:49pm\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (\'\', \'\', \'administrator\', NULL, \'\', \'\', \'cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e\', 1, \'2024-Aug-10 16:03:49pm\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `useraccounts` (`useremail`, `phonenumber`, `roleid`, `sex`, `fname`, `lname`, `logintoken`, `accountstatus`, `createdon`, `createdby`) VALUES (:useremail:, :phonenumber:, :roleid:, :sex:, :fname:, :lname:, :logintoken:, :accountstatus:, :createdon:, :createdby:)', [...], false)
+ 5 APPPATH\Models\MasterModel.php(223): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(166): App\Models\MasterModel->checkCreate('useraccounts', [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewUser()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 16:10:22 --> ErrorException: Undefined variable $AllUsers
+[Method: GET, Route: Users]
+in APPPATH\Views\Users.php on line 20.
+ 1 APPPATH\Views\Users.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $AllUsers', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Users', [], true)
+ 5 APPPATH\Controllers\Home.php(100): view('Users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Users()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 16:10:58 --> ErrorException: Undefined property: stdClass::$username
+[Method: GET, Route: Users]
+in APPPATH\Views\Users.php on line 23.
+ 1 APPPATH\Views\Users.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$username', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Users', [], true)
+ 5 APPPATH\Controllers\Home.php(100): view('Users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Users()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 16:12:46 --> ErrorException: Undefined property: stdClass::$phone_number
+[Method: GET, Route: Users]
+in APPPATH\Views\Users.php on line 250.
+ 1 APPPATH\Views\Users.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$phone_number', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php', 250)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Users', [], true)
+ 5 APPPATH\Controllers\Home.php(100): view('Users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Users()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 16:13:18 --> ErrorException: Undefined property: stdClass::$role_id
+[Method: GET, Route: Users]
+in APPPATH\Views\Users.php on line 260.
+ 1 APPPATH\Views\Users.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role_id', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php', 260)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Users', [], true)
+ 5 APPPATH\Controllers\Home.php(100): view('Users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Users()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-10 17:32:46 --> mysqli_sql_exception: Unknown column 'rolestatus' in 'field list' in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `useracc...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `useracc...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `useracc...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `useracc...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(208): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(208): App\Models\MasterModel->tableUpdate('useraccounts', Array, Array)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->update_data()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-10 17:32:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rolestatus' in 'field list'
+[Method: POST, Route: update_data]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `useraccounts` SET `rolestatus` = :rolestatus:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\MasterModel.php(208): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 3 APPPATH\Controllers\Home.php(208): App\Models\MasterModel->tableUpdate('useraccounts', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->update_data()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 17:32:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rolestatus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `useraccounts` SET `rolestatus` = \'0\'
+WHERE `id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `useraccounts` SET `rolestatus` = \'0\'
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `useraccounts` SET `rolestatus` = :rolestatus:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Models\MasterModel.php(208): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 5 APPPATH\Controllers\Home.php(208): App\Models\MasterModel->tableUpdate('useraccounts', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->update_data()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 17:32:46 --> [Caused by] mysqli_sql_exception: Unknown column 'rolestatus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `useraccounts` SET `rolestatus` = \'0\'
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `useraccounts` SET `rolestatus` = \'0\'
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `useraccounts` SET `rolestatus` = \'0\'
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `useraccounts` SET `rolestatus` = :rolestatus:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Models\MasterModel.php(208): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\Home.php(208): App\Models\MasterModel->tableUpdate('useraccounts', [...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->update_data()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 17:38:57 --> Error: Class "App\Controllers\Database" not found
+[Method: GET, Route: Upload]
+in APPPATH\Controllers\BaseController.php on line 125.
+ 1 APPPATH\Controllers\Home.php(56): App\Controllers\BaseController->createTable()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 17:52:53 --> ErrorException: Undefined property: App\Controllers\Home::$forge
+[Method: GET, Route: Upload]
+in APPPATH\Controllers\BaseController.php on line 183.
+ 1 APPPATH\Controllers\BaseController.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$forge', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\BaseController.php', 183)
+ 2 APPPATH\Controllers\Home.php(56): App\Controllers\BaseController->down()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 17:53:56 --> ErrorException: Undefined property: App\Controllers\Home::$forge
+[Method: GET, Route: Upload]
+in APPPATH\Controllers\BaseController.php on line 184.
+ 1 APPPATH\Controllers\BaseController.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$forge', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\BaseController.php', 184)
+ 2 APPPATH\Controllers\Home.php(56): App\Controllers\BaseController->down()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 20:12:19 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: Upload]
+in APPPATH\Views\Layout.php on line 164.
+ 1 APPPATH\Views\Layout.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php', 164)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Layout', [], true)
+ 5 APPPATH\Controllers\Home.php(59): view('Layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 20:14:08 --> ErrorException: Undefined variable $uri
+[Method: GET, Route: Upload]
+in APPPATH\Views\Layout.php on line 164.
+ 1 APPPATH\Views\Layout.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php', 164)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Layout', [], true)
+ 5 APPPATH\Controllers\Home.php(59): view('Layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-10 20:14:09 --> ErrorException: Undefined variable $uri
+[Method: GET, Route: Upload]
+in APPPATH\Views\Layout.php on line 164.
+ 1 APPPATH\Views\Layout.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uri', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php', 164)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Layout', [], true)
+ 5 APPPATH\Controllers\Home.php(59): view('Layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,441 @@
+ERROR - 2024-08-12 17:31:30 --> mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertem...', Array, false)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->Draws()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-12 17:31:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+[Method: GET, Route: Draws]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 2 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 17:31:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 4 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 17:31:30 --> [Caused by] mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `serialnumbertemp`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 5 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-12 17:40:44 --> mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertem...', Array, false)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->Draws()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-12 17:40:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+[Method: GET, Route: Draws]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 2 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 17:40:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 4 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 17:40:44 --> [Caused by] mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `serialnumbertemp`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 5 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 17:59:46 --> ErrorException: Undefined variable $request
+[Method: POST, Route: Draws]
+in APPPATH\Views\Draws.php on line 56.
+ 1 APPPATH\Views\Draws.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Draws.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Draws.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Draws', [], true)
+ 5 APPPATH\Controllers\Home.php(76): view('Draws', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 18:00:13 --> ErrorException: Attempt to read property "drawdate" on array
+[Method: POST, Route: Draws]
+in APPPATH\Views\Draws.php on line 56.
+ 1 APPPATH\Views\Draws.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "drawdate" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Draws.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Draws.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Draws', [], true)
+ 5 APPPATH\Controllers\Home.php(76): view('Draws', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 18:41:56 --> ErrorException: Undefined variable $datesearch
+[Method: GET, Route: verify]
+in APPPATH\Controllers\Home.php on line 63.
+ 1 APPPATH\Controllers\Home.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datesearch', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Verify()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 18:42:14 --> ErrorException: Undefined variable $data
+[Method: GET, Route: verify]
+in APPPATH\Controllers\Home.php on line 71.
+ 1 APPPATH\Controllers\Home.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Verify()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 19:41:33 --> ErrorException: Array to string conversion
+[Method: POST, Route: verify]
+in APPPATH\Controllers\Home.php on line 73.
+ 1 APPPATH\Controllers\Home.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Verify()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 20:35:20 --> Error: Call to undefined method CodeIgniter\Session\Session::userdata()
+[Method: GET, Route: Dashboard]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 20:36:01 --> Error: Call to undefined method CodeIgniter\Session\Session::userdata()
+[Method: GET, Route: Dashboard]
+in APPPATH\Controllers\Home.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:21:06 --> ErrorException: Undefined variable $getdashboarddata
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 15.
+ 1 APPPATH\Views\Dashboard.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getdashboarddata', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(58): view('Dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:21:27 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 15.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 4 APPPATH\Controllers\Home.php(58): view('Dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:22:49 --> ErrorException: Undefined array key "submitted"
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 15.
+ 1 APPPATH\Views\Dashboard.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "submitted"', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(58): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:23:06 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultA()
+[Method: GET, Route: Dashboard]
+in APPPATH\Models\MasterModel.php on line 542.
+ 1 APPPATH\Controllers\Home.php(56): App\Models\MasterModel->getdashboarddata()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:24:14 --> ParseError: syntax error, unexpected identifier "W", expecting ")"
+[Method: GET, Route: Dashboard]
+in APPPATH\Models\MasterModel.php on line 550.
+ 1 VENDORPATH\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp8\\htdocs\\electroland\\vendor\\composer/../../app\\Models\\MasterModel.php')
+ 2 APPPATH\Controllers\Home.php(38): Composer\Autoload\ClassLoader->loadClass('App\\Models\\MasterModel')
+ 3 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:24:50 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+[Method: GET, Route: Dashboard]
+in APPPATH\Models\MasterModel.php on line 553.
+ 1 APPPATH\Controllers\Home.php(56): App\Models\MasterModel->getdashboarddata()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:25:40 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+[Method: GET, Route: Dashboard]
+in APPPATH\Models\MasterModel.php on line 542.
+ 1 APPPATH\Controllers\Home.php(56): App\Models\MasterModel->getdashboarddata()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:25:50 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultA()
+[Method: GET, Route: Dashboard]
+in APPPATH\Models\MasterModel.php on line 542.
+ 1 APPPATH\Controllers\Home.php(56): App\Models\MasterModel->getdashboarddata()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:26:05 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 15.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 4 APPPATH\Controllers\Home.php(58): view('Dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:51:08 --> ErrorException: Undefined array key 1
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:51:44 --> ErrorException: Undefined array key "months"
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "months"', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:52:14 --> ErrorException: Undefined array key "months"
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "months"', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:52:33 --> ErrorException: Undefined array key "months"
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "months"', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:52:48 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 4 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:54:56 --> ErrorException: Undefined array key 1
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:55:29 --> ErrorException: Undefined array key "months"
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "months"', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:56:06 --> ErrorException: Undefined array key "months"
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "months"', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 21:56:18 --> ErrorException: Undefined array key 0
+[Method: GET, Route: Dashboard]
+in APPPATH\Views\Dashboard.php on line 77.
+ 1 APPPATH\Views\Dashboard.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-12 22:00:03 --> ParseError: syntax error, unexpected token "/"
+[Method: GET, Route: Dashboard]
+in APPPATH\Controllers\Home.php on line 59.
+ 1 VENDORPATH\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp8\\htdocs\\electroland\\vendor\\composer/../../app/Controllers/Home.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Home')
+ 3 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 4 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,903 @@
+ERROR - 2024-08-13 04:10:24 --> mysqli_sql_exception: Unknown column 'winStatus' in 'where clause' in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(57): App\Models\MasterModel->getdashboarddata()
+#5 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2024-08-13 04:10:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'winStatus' in 'where clause'
+[Method: GET, Route: Dashboard]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/MasterModel.php(546): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Home.php(57): App\Models\MasterModel->getdashboarddata()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:10:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'winStatus' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/MasterModel.php(546): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Home.php(57): App\Models\MasterModel->getdashboarddata()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:10:24 --> [Caused by] mysqli_sql_exception: Unknown column 'winStatus' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/MasterModel.php(546): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Home.php(57): App\Models\MasterModel->getdashboarddata()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-08-13 04:13:51 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(227): App\Models\MasterModel->getData()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-08-13 04:13:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:13:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:13:51 --> [Caused by] mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-08-13 04:14:15 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(227): App\Models\MasterModel->getData()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-08-13 04:14:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:14:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:14:15 --> [Caused by] mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-08-13 04:16:59 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(227): App\Models\MasterModel->getData()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-08-13 04:16:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:16:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:16:59 --> [Caused by] mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-08-13 04:23:21 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(227): App\Models\MasterModel->getData()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-08-13 04:23:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:23:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:23:21 --> [Caused by] mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(227): App\Models\MasterModel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-08-13 04:25:38 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(229): App\Models\MasterModel->getData()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-08-13 04:25:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(229): App\Models\MasterModel->getData()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:25:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Home.php(229): App\Models\MasterModel->getData()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 04:25:38 --> [Caused by] mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(229): App\Models\MasterModel->getData()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-08-13 04:26:33 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(478): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(247): App\Models\MasterModel->moveRecords()
+#5 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+ERROR - 2024-08-13 04:26:33 --> mysqli_sql_exception: Table 'tsql_electro.serialnumbertemp' doesn't exist in /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/wb6wawajiqqm/public_html/backend/app/Models/MasterModel.php(489): CodeIgniter\Database\BaseConnection->query()
+#4 /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php(247): App\Models\MasterModel->moveRecords()
+#5 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+#6 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#7 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /home/wb6wawajiqqm/public_html/backend/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#10 /home/wb6wawajiqqm/public_html/backend/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#11 {main}
+CRITICAL - 2024-08-13 05:21:54 --> Error: Undefined constant "roles"
+[Method: GET, Route: Users]
+in APPPATH/Views/Layout.php on line 342.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Home.php(304): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Users()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:22:43 --> Error: Undefined constant "roles"
+[Method: GET, Route: Users]
+in APPPATH/Views/Layout.php on line 342.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Home.php(304): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Users()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:23:31 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Roles]
+in APPPATH/Views/Layout.php on line 343.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Home.php(280): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:26:42 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Roles]
+in APPPATH/Views/Layout.php on line 344.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Home.php(285): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:27:37 --> ErrorException: Undefined variable $roles
+[Method: GET, Route: Upload]
+in APPPATH/Views/Layout.php on line 343.
+ 1 APPPATH/Views/Layout.php(343): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(189): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:28:29 --> ErrorException: Undefined variable $roles
+[Method: GET, Route: Upload]
+in APPPATH/Views/Layout.php on line 343.
+ 1 APPPATH/Views/Layout.php(343): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(189): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:29:03 --> ErrorException: Undefined variable $roles
+[Method: GET, Route: Enteries]
+in APPPATH/Views/Layout.php on line 343.
+ 1 APPPATH/Views/Layout.php(343): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(212): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Enteries()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:29:53 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Roles]
+in APPPATH/Views/Layout.php on line 344.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Home.php(287): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:53:26 --> ErrorException: Undefined variable $head
+[Method: GET, Route: Upload]
+in APPPATH/Views/Layout.php on line 260.
+ 1 APPPATH/Views/Layout.php(260): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(200): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 05:53:39 --> ErrorException: Undefined variable $head
+[Method: GET, Route: Draws]
+in APPPATH/Views/Layout.php on line 260.
+ 1 APPPATH/Views/Layout.php(260): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(176): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->Draws()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 11:59:35 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: VerifyLogin]
+in APPPATH/Controllers/Home.php on line 558.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 12:03:05 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: VerifyLogin]
+in APPPATH/Controllers/Home.php on line 558.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 13:25:03 --> ErrorException: Undefined variable $email
+[Method: GET, Route: Upload]
+in APPPATH/Views/Layout.php on line 743.
+ 1 APPPATH/Views/Layout.php(743): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(207): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 14:06:51 --> ErrorException: Undefined variable $email
+[Method: GET, Route: Upload]
+in APPPATH/Views/Layout.php on line 743.
+ 1 APPPATH/Views/Layout.php(743): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(207): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 14:06:51 --> ErrorException: Undefined variable $email
+[Method: GET, Route: Upload]
+in APPPATH/Views/Layout.php on line 743.
+ 1 APPPATH/Views/Layout.php(743): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/wb6wawajiqqm/public_html/backend/app/Views/Layout.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(207): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:09:02 --> TypeError: App\Models\MasterModel::tableUpdate(): Argument #3 ($where) must be of type array, string given, called in /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php on line 643
+[Method: POST, Route: changepassword]
+in APPPATH/Models/MasterModel.php on line 207.
+ 1 APPPATH/Controllers/Home.php(643): App\Models\MasterModel->tableUpdate()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:10:37 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:12:21 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:12:32 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:15:10 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:16:12 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:17:11 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:21:14 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:22:09 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:23:57 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:24:35 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:24:52 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:26:37 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:28:04 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:32:16 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:32:52 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:39:28 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:39:37 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:40:28 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:40:48 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:41:32 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:41:41 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:45:40 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:45:46 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:47:39 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:47:42 --> ErrorException: Array to string conversion
+[Method: POST, Route: changepassword]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:49:11 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:52:08 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:52:09 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:52:48 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:53:18 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:55:04 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 643.
+ 1 APPPATH/Controllers/Home.php(643): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:56:53 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 50.
+ 1 APPPATH/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 20:58:07 --> ErrorException: Array to string conversion
+[Method: POST, Route: ChangePin]
+in APPPATH/Controllers/Home.php on line 50.
+ 1 APPPATH/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 21:09:24 --> TypeError: App\Models\MasterModel::tableUpdate(): Argument #3 ($where) must be of type array, string given, called in /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php on line 53
+[Method: POST, Route: ChangePin]
+in APPPATH/Models/MasterModel.php on line 207.
+ 1 APPPATH/Controllers/Home.php(53): App\Models\MasterModel->tableUpdate()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-08-13 21:13:19 --> TypeError: App\Models\MasterModel::tableUpdate(): Argument #3 ($where) must be of type array, string given, called in /home/wb6wawajiqqm/public_html/backend/app/Controllers/Home.php on line 53
+[Method: POST, Route: ChangePin]
+in APPPATH/Models/MasterModel.php on line 207.
+ 1 APPPATH/Controllers/Home.php(53): App\Models\MasterModel->tableUpdate()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->changepassword()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()

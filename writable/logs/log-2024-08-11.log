@@ -1,0 +1,356 @@
+CRITICAL - 2024-08-11 08:24:27 --> ErrorException: Undefined variable $response
+[Method: GET, Route: Upload]
+in APPPATH\Views\Layout.php on line 611.
+ 1 APPPATH\Views\Layout.php(611): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php', 611)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Layout.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Layout', [], true)
+ 5 APPPATH\Controllers\Home.php(59): view('Layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 08:27:30 --> ParseError: Unmatched ')'
+[Method: GET, Route: Upload]
+in APPPATH\Views\Layout.php on line 642.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Layout', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('Layout', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->UploadData()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-11 09:45:20 --> mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertem...', Array, false)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-11 09:45:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 2 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 09:45:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 4 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 09:45:20 --> [Caused by] mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `serialnumbertemp`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 5 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-11 09:52:56 --> mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertem...', Array, false)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->Preview()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-11 09:52:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+[Method: GET, Route: Preview]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 2 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 09:52:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 4 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 09:52:56 --> [Caused by] mysqli_sql_exception: Table 'electroland.serialnumbertemp' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `serialnumbertemp`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `serialnumbertemp`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `serialnumbertemp`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `serialnumbertemp`', [], false)
+ 5 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(76): App\Models\MasterModel->getData('serialnumbertemp', [], false)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Preview()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 10:10:26 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::query()
+[Method: POST, Route: submitEntries]
+in APPPATH\Models\SerialnumberModel.php on line 38.
+ 1 APPPATH\Controllers\Home.php(93): App\Models\SerialnumberModel->moveRecords()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-11 10:14:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO ser...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ser...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ser...')
+#3 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO ser...')
+#4 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+#5 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-11 10:14:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+[Method: POST, Route: submitEntries]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 2 APPPATH\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 10:14:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 3 APPPATH\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 4 APPPATH\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 10:14:39 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 4 APPPATH\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 5 APPPATH\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-11 10:15:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO ser...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ser...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ser...')
+#3 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO ser...')
+#4 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+#5 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-11 10:15:10 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+[Method: POST, Route: submitEntries]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 2 APPPATH\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 10:15:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 3 APPPATH\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 4 APPPATH\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-11 10:15:10 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 4 APPPATH\Models\MasterModel.php(470): CodeIgniter\Database\BaseConnection->query('INSERT INTO serialnumber (serialnumber)
+                SELECT s.serialnumber
+                FROM serialnumbertemp s
+                WHERE NOT EXISTS (
+                    SELECT 1
+                    FROM serialnumber t
+                    WHERE t.serialnumber = s.serialnumber')
+ 5 APPPATH\Controllers\Home.php(92): App\Models\MasterModel->moveRecords()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->submitEntries()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

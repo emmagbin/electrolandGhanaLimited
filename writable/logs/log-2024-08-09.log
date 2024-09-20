@@ -1,0 +1,479 @@
+CRITICAL - 2024-08-09 11:09:07 --> ErrorException: Undefined property: App\Controllers\Home::$MasterModel
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 157.
+ 1 APPPATH\Controllers\Home.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$MasterModel', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 157)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:19:57 --> ErrorException: Undefined property: App\Controllers\Home::$MasterModel
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 158.
+ 1 APPPATH\Controllers\Home.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$MasterModel', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 158)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:21:04 --> ErrorException: Undefined property: App\Controllers\Home::$MasterModel
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 158.
+ 1 APPPATH\Controllers\Home.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$MasterModel', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 158)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:54:34 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Models\MasterModel.php on line 12.
+ 1 VENDORPATH\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp8\\htdocs\\electroland\\vendor\\composer/../../app\\Models\\MasterModel.php')
+ 2 APPPATH\Controllers\Home.php(35): Composer\Autoload\ClassLoader->loadClass('App\\Models\\MasterModel')
+ 3 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-09 11:55:11 --> mysqli_sql_exception: Table 'electroland.institution_users' doesn't exist in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM i...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM i...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM i...')
+#3 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM i...')
+#4 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+#5 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-09 11:55:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.institution_users' doesn't exist
+[Method: POST, Route: VerifyLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 2 APPPATH\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:55:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'electroland.institution_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 3 APPPATH\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 4 APPPATH\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:55:11 --> [Caused by] mysqli_sql_exception: Table 'electroland.institution_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 4 APPPATH\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM institution_users WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 5 APPPATH\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-09 11:56:28 --> mysqli_sql_exception: Unknown column 'login_token' in 'where clause' in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+#5 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-09 11:56:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'login_token' in 'where clause'
+[Method: POST, Route: VerifyLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 2 APPPATH\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:56:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'login_token' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 3 APPPATH\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 4 APPPATH\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 11:56:28 --> [Caused by] mysqli_sql_exception: Unknown column 'login_token' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 4 APPPATH\Models\MasterModel.php(397): CodeIgniter\Database\BaseConnection->query('SELECT * FROM useraccounts WHERE login_token=\'0cac0e6c90003541132c81106228237b1f51074b19478a1bf1bec14b35cee4dd53ef1ccc0e1bb9b864ee8ec77587f21e1f1b5939ef99d9dbbeb93bcaca4ea349\' AND status=\'1\'')
+ 5 APPPATH\Controllers\Home.php(161): App\Models\MasterModel->validateLogin('ima@gmail.com', '1111')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:02:27 --> ErrorException: Attempt to read property "loginId" on array
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 170.
+ 1 APPPATH\Controllers\Home.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "loginId" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 170)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:05:36 --> ErrorException: Undefined array key 0
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 170.
+ 1 APPPATH\Controllers\Home.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 170)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:06:11 --> ErrorException: Undefined variable $sessArray
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 185.
+ 1 APPPATH\Controllers\Home.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sessArray', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:09:21 --> ErrorException: Undefined array key 0
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 166.
+ 1 APPPATH\Controllers\Home.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:09:51 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 166.
+ 1 APPPATH\Controllers\Home.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:11:43 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 166.
+ 1 APPPATH\Controllers\Home.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:17:51 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 173.
+ 1 APPPATH\Controllers\Home.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:18:27 --> ErrorException: Undefined array key 0
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 169.
+ 1 APPPATH\Controllers\Home.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:18:31 --> ErrorException: Undefined array key 0
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 169.
+ 1 APPPATH\Controllers\Home.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:18:42 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 173.
+ 1 APPPATH\Controllers\Home.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:18:46 --> ErrorException: Attempt to read property "id" on array
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 173.
+ 1 APPPATH\Controllers\Home.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:19:12 --> ErrorException: Attempt to read property "outletid" on array
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 174.
+ 1 APPPATH\Controllers\Home.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "outletid" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 174)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:36:54 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 185.
+ 1 APPPATH\Controllers\Home.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:40:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 184.
+ 1 APPPATH\Controllers\Home.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 12:43:48 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: VerifyLogin]
+in APPPATH\Controllers\Home.php on line 191.
+ 1 APPPATH\Controllers\Home.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->validateLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 19:24:29 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: CreateRole]
+in APPPATH\Controllers\BaseController.php on line 66.
+ 1 APPPATH\Controllers\BaseController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\BaseController.php', 66)
+ 2 APPPATH\Controllers\Home.php(73): App\Controllers\BaseController->checkSession()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewRole()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 19:25:22 --> ErrorException: Undefined array key "lname"
+[Method: POST, Route: CreateRole]
+in APPPATH\Controllers\BaseController.php on line 68.
+ 1 APPPATH\Controllers\BaseController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lname"', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\BaseController.php', 68)
+ 2 APPPATH\Controllers\Home.php(73): App\Controllers\BaseController->checkSession()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewRole()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 19:25:45 --> ErrorException: Undefined array key "useremail"
+[Method: POST, Route: CreateRole]
+in APPPATH\Controllers\BaseController.php on line 69.
+ 1 APPPATH\Controllers\BaseController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "useremail"', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\BaseController.php', 69)
+ 2 APPPATH\Controllers\Home.php(73): App\Controllers\BaseController->checkSession()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewRole()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 19:26:14 --> ErrorException: Undefined array key "roleid"
+[Method: POST, Route: CreateRole]
+in APPPATH\Controllers\BaseController.php on line 72.
+ 1 APPPATH\Controllers\BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "roleid"', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\BaseController.php', 72)
+ 2 APPPATH\Controllers\Home.php(73): App\Controllers\BaseController->checkSession()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->NewRole()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:44:23 --> ErrorException: Undefined property: App\Controllers\Home::$MasterModel
+[Method: GET, Route: Roles]
+in APPPATH\Controllers\Home.php on line 69.
+ 1 APPPATH\Controllers\Home.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$MasterModel', 'C:\\xampp8\\htdocs\\electroland\\app\\Controllers\\Home.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:48:33 --> ParseError: syntax error, unexpected integer "0", expecting ")"
+[Method: GET, Route: Roles]
+in APPPATH\Controllers\Home.php on line 69.
+ 1 VENDORPATH\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp8\\htdocs\\electroland\\vendor\\composer/../../app/Controllers/Home.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Home')
+ 3 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 4 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:48:49 --> ParseError: syntax error, unexpected integer "0", expecting ")"
+[Method: GET, Route: Roles]
+in APPPATH\Controllers\Home.php on line 69.
+ 1 VENDORPATH\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp8\\htdocs\\electroland\\vendor\\composer/../../app/Controllers/Home.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Home')
+ 3 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Home', true)
+ 4 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-09 20:49:15 --> mysqli_sql_exception: Unknown column 'id!' in 'where clause' in C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8\htdocs\electroland\app\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\electroland\app\Controllers\Home.php(69): App\Models\MasterModel->getData('roles', Array, true)
+#6 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Home->Roles()
+#7 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\electroland\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\electroland\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-09 20:49:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id!' in 'where clause'
+[Method: GET, Route: Roles]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `roles`
+WHERE `id!` = :id!:', [...], false)
+ 2 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(69): App\Models\MasterModel->getData('roles', [...], true)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:49:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id!' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `roles`
+WHERE `id!` = 0')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `roles`
+WHERE `id!` = 0')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `roles`
+WHERE `id!` = :id!:', [...], false)
+ 4 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(69): App\Models\MasterModel->getData('roles', [...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:49:15 --> [Caused by] mysqli_sql_exception: Unknown column 'id!' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `roles`
+WHERE `id!` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `roles`
+WHERE `id!` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `roles`
+WHERE `id!` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `roles`
+WHERE `id!` = :id!:', [...], false)
+ 5 APPPATH\Models\MasterModel.php(105): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(69): App\Models\MasterModel->getData('roles', [...], true)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:54:19 --> ErrorException: Undefined variable $roles
+[Method: GET, Route: Roles]
+in APPPATH\Views\Roles.php on line 59.
+ 1 APPPATH\Views\Roles.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roles', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Roles', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Roles')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:55:54 --> ErrorException: Attempt to read property "rolename" on array
+[Method: GET, Route: Roles]
+in APPPATH\Views\Roles.php on line 61.
+ 1 APPPATH\Views\Roles.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "rolename" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php', 61)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Roles', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-09 20:56:26 --> ErrorException: Attempt to read property "rolename" on array
+[Method: GET, Route: Roles]
+in APPPATH\Views\Roles.php on line 61.
+ 1 APPPATH\Views\Roles.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "rolename" on array', 'C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php', 61)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp8\\htdocs\\electroland\\app\\Views\\Roles.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Roles', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Roles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Roles()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
